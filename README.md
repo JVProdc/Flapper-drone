@@ -136,3 +136,18 @@
 </table>
 <p>In the interests of continuous product improvement all specifications are subject to change without notice.</p>
 <p>The latest datasheet can be downloaded <a href="nimbleplus:flapper_nimbleplus_specs_2024-03.pdf">here</a>.</p>
+
+
+ <h5>Components & Accessories</h5>
+  
+  <div class="box">
+    <p>1. If your Flapper was shipped to you, it arrived with foam inserts. These inserts are not needed for regular transport but it is a good idea to keep them should you ever need to ship the Flapper.</p>
+    <img src="nimbleplus:contents_1_anot.jpg" alt="Contents 1">
+  </div>
+
+  <div class="box">
+    <p>2. The content of the flight case is described below, the exact components might vary depending on the model year. Please note that some of the accessories are optional and thus may have not been included with your Flapper.</p>
+    <img src="nimbleplus:contents_2_anot.jpg" alt="Contents 2">
+    <img src="nimbleplus:contents_3_anot.jpg" alt="Contents 3">
+  </div>
+

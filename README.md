@@ -1,4 +1,5 @@
-<h1>Flapper Nimble+ (Specifications)</h1>
+<h1>Flapper Nimble+ </h1>
+<h3> Specifications</h3>
 <table>
   <tr>
     <th>Application</th>

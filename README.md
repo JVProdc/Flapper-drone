@@ -402,6 +402,57 @@
 
 
 
+<h5>Powering the Flapper up & down</h5>
+
+  <h6>Connecting the battery</h6>
+  <div class="box">
+    <p>To power the Flapper up, simply plug in its battery.</p>
+
+  <div class="important center round" style="width: 90%;">
+    <p><strong>Pay attention to the correct connector orientation</strong>. Using excessive force, it is possible to plug the connector the other way round, which would damage the Flapper's electronics. If unsure, the red and black colors on the lead wires should be matched.</p>
+  </div>
+
+  <img src="battery_connection_anot.jpg" alt="">
+
+   <p>Once the battery is connected, place the flapper on a still surface such that its sensors initialize properly. You should hear 3 short beeps, followed by 2 long beeps.</p>
+
+  <div class="tip center round" style="width: 90%;">
+    <p>If you hear only the 3 short beeps and no long beeps, this may indicate the Flapper has been moving too much and its sensors cannot initialize properly. Try to re-plug the battery while keeping the Flapper still.</p>
+
+  <p>If the startup sequence ends with 1 long beep instead of 2 and you are using a <a href="flight-controller#Radio_Transmitter">radio transmitter</a>, check whether your throttle stick is in zero throttle (full down) position.</p>
+    </div>
+  </div>
+
+  <h6>Disconnecting the battery</h6>
+  <div class="box">
+    <p>To power the Flapper down completely, disconnect the battery by pulling the two connector sides apart.</p>
+
+  <img src="battery_disconnect_anot.jpg" alt="">
+
+  <div class="info round">
+      <p>Disconnecting the battery might require quite some force. If the connector feels to be "stuck", try to be patient and try to loosen it by wiggling the connectors sideways while pulling on both ends. We do not recommend using tools like pliers as this might damage the power leads.</p>
+    </div>
+  </div>
+
+  <h6>The power switch</h6>
+  <div class="box">
+    <p>The control board has a power switch, which can be used for powering the Flapper off and on, e.g. when performing short flight tests with some idle time in between. The power switch is located on the side of the Flapper, a short press will power the Flapper down, another short press will power it up again.</p>
+
+  <img src="power_switch_anot.jpg" alt="">
+
+  <div class="info center round" style="width: 80%;">
+      <p>The power switch will disconnect power going to the motor speed controllers, actuators as well as other add-on devices, limiting the power usage to a minimum. However, the main board will still consume a small amount of power and thus it should only be used when the Flapper is being switched temporarily.</p>
+    </div>
+
+  <div class="important center round" style="width: 80%;">
+      <p><strong>For storage</strong>, or if you won't be using the Flapper for a longer period of time, <strong>always disconnect the battery from the Flapper!</strong></p>
+
+  <p>Otherwise, the small current the main board is using in its idle state will slowly discharge the battery, which will eventually get fully discharged and irreversibly damaged as a result.</p>
+    </div>
+  </div>
+
+
+
 
 
 

@@ -208,7 +208,7 @@
 
 
 
-  <h3 id = nstall-wings>Wing Installation</h3>
+  <h3 id = "install-wings">Wing Installation</h3>
   <p>The Flapper is stored in the flight case with the wings detached. To install the wings, follow the steps below:</p>
   
   <div class="box">

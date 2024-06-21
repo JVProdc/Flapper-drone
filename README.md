@@ -142,7 +142,7 @@
   
   <div class="box">
     <p>1. If your Flapper was shipped to you, it arrived with foam inserts. These inserts are not needed for regular transport but it is a good idea to keep them should you ever need to ship the Flapper.</p>
-    <img src="contents_2_anot(1).jpg" alt="Contents 1">
+    <img src="contents_1_anot.jpg" alt="Contents 1">
   </div>
 
   <div class="box">

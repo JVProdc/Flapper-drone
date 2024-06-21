@@ -181,7 +181,7 @@
 
 <h2> Pre-flight setup </h2>
 
-  <h3>Landing Gear Installation (Optional)</h3>
+  <h3 id = "landing-gear-installation">Landing Gear Installation (Optional)</h3>
 
   <div class="info">
     <p>The installation of the landing gear is optional, and is only required if you want to perform take-offs and landings from the ground.</p>
@@ -312,7 +312,7 @@
   <p>To install the shells, follow the steps below:</p>
 
   <div class="box">
-    <p>1. If you wish to use the landing gear <a href="landing-gear">install it first</a>.</p>
+    <p>1. If you wish to use the landing gear <a href=#landing-gear-installation>install it first</a>.</p>
   </div>
 
   <div class="box">

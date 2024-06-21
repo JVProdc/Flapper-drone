@@ -1,4 +1,8 @@
-<h5 textSize = 40p>Flapper Nimble+ (Specifications)</h5>
+<style> h5 {
+  font-size: 40px;
+}</style>
+
+<h5>Flapper Nimble+ (Specifications)</h5>
 <table>
   <tr>
     <th>Application</th>

@@ -589,7 +589,51 @@
 
   <hr>
   <br>
-  
+
+
+  <h3 id = "flightt-checks">Pre-flight Checks</h3>
+  <p>Before every flight, perform the following checks:</p>
+
+  <div class="box">
+    <p>1. Check that the wings are correctly installed and that they do not have any damage. If needed, <a href=#servicing>fix the wings</a> or replace them with a new set.</p>
+  </div>
+
+  <div class="box">
+    <p>2. <a href=#power-up-down>Power the Flapper up</a>.</p>
+  </div>
+
+  <div class="box">
+    <p>3. Check that the servos are correctly trimmed:</p>
+    <img src="pitch_servo_trim.jpg?400" alt="Pitch Servo Trim">
+    <br>
+    <img src="yaw_servo_trim.jpg?400" alt="Yaw Servo Trim">
+    <p>If they are not (situations indicated with red), perform the <a href=#servo-trim>trimming procedure</a>.</p>
+  </div>
+
+  <div class="box">
+    <p>4. Check that all the actuators are working correctly:</p>
+    <div class="centeralign">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ovEV3D6BjAM?rel=0&autoplay=0&loop=1&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+      <p>(please turn on the close captions to see the instructions)</p>
+    </div>
+  </div>
+
+  <div class="info">
+    <p>When flying the Flapper, or just testing the actuators, pay attention to the front/back orientation of the Flapper.<br>
+    The "<strong>spine</strong>" (square carbon rod) is on the <strong>back side</strong> of the Flapper.</p>
+  </div>
+
+  <div class="box">
+    <p>5. Next, test the auto-stabilization:</p>
+    <div class="centeralign">
+      <a href src="https://www.youtube.com/embed/a19aLzMQYFY?rel=0&autoplay=0&loop=1&cc_load_policy=1" frameborder="0" allowfullscreen> Here </a>
+      <p>(please turn on the close captions to see the instructions)</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <p>6. You are ready for the <a href=#flight-first>first flight</a>!</p>
+  </div>
 
 
 

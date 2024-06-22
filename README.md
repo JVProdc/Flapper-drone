@@ -135,7 +135,7 @@
   </tr>
 </table>
 <p>In the interests of continuous product improvement all specifications are subject to change without notice.</p>
-<p>The latest datasheet can be downloaded <a href="flapper_nimbleplus_specs_2024-03.pdf">here</a>.</p>
+<p>The latest datasheet can be downloaded <a href="resource/flapper_nimbleplus_specs_2024-03.pdf">here</a>.</p>
 
 <hr>
 <br>
@@ -144,13 +144,13 @@
   
   <div class="box">
     <p>1. If your Flapper was shipped to you, it arrived with foam inserts. These inserts are not needed for regular transport but it is a good idea to keep them should you ever need to ship the Flapper.</p>
-    <img src="contents_1_anot.jpg" alt="Contents 1">
+    <img src="resource/contents_1_anot.jpg" alt="Contents 1">
   </div>
 
   <div class="box">
     <p>2. The content of the flight case is described below, the exact components might vary depending on the model year. Please note that some of the accessories are optional and thus may have not been included with your Flapper.</p>
-    <img src="contents_2_anot.jpg" alt="Contents 2">
-    <img src="contents_3_anot.jpg" alt="Contents 3">
+    <img src="resource/contents_2_anot.jpg" alt="Contents 2">
+    <img src="resource/contents_3_anot.jpg" alt="Contents 3">
   </div>
 
 <hr>
@@ -161,16 +161,16 @@
   
   <div class="box">
     <p>1) Battery is charging:</p>
-    <img src="charge_01.jpg" alt="Battery is charging">
+    <img src="resource/charge_01.jpg" alt="Battery is charging">
     <br>
-    <img src="charge_usb_01.jpg" alt="USB charger charging">
+    <img src="resource/charge_usb_01.jpg" alt="USB charger charging">
   </div>
 
   <div class="box">
     <p>2) Battery is fully charged:</p>
-    <img src="charge_02.jpg" alt="Battery fully charged">
+    <img src="resource/charge_02.jpg" alt="Battery fully charged">
     <br>
-    <img src="charge_usb_02.jpg" alt="USB charger fully charged">
+    <img src="resource/charge_usb_02.jpg" alt="USB charger fully charged">
   </div>
 
   <div class="important">
@@ -191,7 +191,7 @@
 
   <div class="box">
     <p>1. Install the landing gear by pressing it onto the fuselage as indicated:</p>
-    <img src="landing_gear_2_anot.jpg" alt="Landing gear installation">
+    <img src="resource/landing_gear_2_anot.jpg" alt="Landing gear installation">
     <div class="important">
       <p>This step might require quite some force, especially when the Flapper is brand new. If pressing it on with only your hands is too hard, you can place the Flapper upside down and use a desk or another hard surface as a support for the top of the fuselage (indicated with the right arrow on the image above). Perform this carefully such that the Flapper remains vertical and does not slip, otherwise you could damage the Flapper.</p>
     </div>
@@ -214,9 +214,9 @@
   <div class="box">
     <p>1. Insert the leading edge rod into the wing arm, pay attention to the orientation.</p>
     <div class="group">
-      <div class="column"><img src="wing_002.png" alt="Insert the leading edge"></div>
+      <div class="column"><img src="resource/wing_002.png" alt="Insert the leading edge"></div>
       <br>
-      <div class="column"><img src="wing_003.png" alt="Incorrect alignment"></div>
+      <div class="column"><img src="resource/wing_003.png" alt="Incorrect alignment"></div>
     </div>
     <div class="important">
       <p>The carbon rod at the root of the wing should be on the <strong>inside</strong> of the wing fold. If the leading edge has a D profile (model year 2022 and older), then also the round side should be facing up.</p>
@@ -225,17 +225,17 @@
 
   <div class="box">
     <p>2. Repeat step 1. for the other leading edge rod.</p>
-    <img src="wing_004.png" alt="">
+    <img src="resource/wing_004.png" alt="">
   </div>
 
   <div class="box">
     <p>3. Insert the wing root rod plug into the indicated cylindrical hole.</p>
-    <img src="wing_005.png" alt="">
+    <img src="resource/wing_005.png" alt="">
   </div>
 
   <div class="box">
     <p>4. Connect the wing root rod to the bottom wing arm.</p>
-    <img src="wing_006.png" alt="">
+    <img src="resource/wing_006.png" alt="">
     <div class="tip">
       <p>If needed, move the bottom servo assembly up or down to have a good alignment with the opening on the wing.</p>
     </div>
@@ -243,17 +243,17 @@
 
   <div class="box">
     <p>5. Slide the root rod into the slot.</p>
-    <img src="wing_007.png" alt="">
+    <img src="resource/wing_007.png" alt="">
   </div>
 
   <div class="box">
     <p>6. Pull the wing gently outwards such that the root rod locks itself at the end of the slot.</p>
-    <img src="wing_008.png" alt="">
+    <img src="resource/wing_008.png" alt="">
   </div>
 
   <div class="box">
     <p>7. Repeat the process for the other wing and you are finished!</p>
-    <img src="wing_009.jpg" alt="">
+    <img src="resource/wing_009.jpg" alt="">
   </div>
 
   <hr>
@@ -264,12 +264,12 @@
 
   <div class="box">
     <p>1. Slide the root rod out of the slot in the bottom wing arm.</p>
-    <img src="wing_010.png" alt="">
+    <img src="resource/wing_010.png" alt="">
   </div>
 
   <div class="box">
     <p>2. Pull the wing root rod plug out of the flapping mechanism.</p>
-    <img src="wing_011.png" alt="">
+    <img src="resource/wing_011.png" alt="">
   </div>
 
   <div class="box">
@@ -278,12 +278,12 @@
     </div>
     <p>3. Pull <strong>both</strong> of the leading edges <strong>simultaneously</strong> out of the wing arms.</p>
     <p>Should this require too much force (which can be the case when your Flapper is new), remove them one by one, starting with the looser one, while <strong>paying extra care</strong> not to pull too hard, as otherwise you might tear the wing once the leading edge gets released from the wing arm.</p>
-    <img src="wing_012.png" alt="">
+    <img src="resource/wing_012.png" alt="">
   </div>
 
   <div class="box">
     <p>4. Repeat steps 1-3 for the second wing and you are finished.</p>
-    <img src="wing_001.png" alt="">
+    <img src="resource/wing_001.png" alt="">
   </div>
 <hr>
 <br>
@@ -292,12 +292,12 @@
   
   <div class="box">
     <p>1. Install the battery by pushing it inside the flexible battery holder as indicated:</p>
-    <img src="battery_1.jpg" alt="">
+    <img src="resource/battery_1.jpg" alt="">
   </div>
 
   <div class="box">
     <p>2. Verify that the battery is properly seated and that the bottom "lip" of the battery holder is providing support instead of being bent. Re-seat the battery if necessary.</p>
-    <img src="battery_2.jpg" alt="">
+    <img src="resource/battery_2.jpg" alt="">
   </div>
 
   <hr>
@@ -317,7 +317,7 @@
 
   <div class="box">
     <p>2. Remove the shells from the flight case and get them ready.</p>
-    <img src="shells_01.jpg" alt="">
+    <img src="resource/shells_01.jpg" alt="">
     <div class="important">
       <p>When handling the shells, proceed with caution! They are designed as lightweight as possible such that the flight performance of the Flapper is not negatively affected. This, however, means they are quite delicate. Handle them with care!</p>
     </div>
@@ -325,59 +325,59 @@
 
   <div class="box">
     <p>3. Take one of the body shells and orient it correctly.</p>
-    <img src="shells_02_anot.jpg" alt="">
+    <img src="resource/shells_02_anot.jpg" alt="">
   </div>
 
   <div class="box">
     <p>4. The body shells have 4 slots on its side into which the shell holder on the Flapper's body needs to slide in. Start with one of the slots as indicated:</p>
-    <img src="shells_03_anot.jpg" alt="">
+    <img src="resource/shells_03_anot.jpg" alt="">
   </div>
 
   <div class="box">
     <p>5. Then continue with the second slot on the same side:</p>
-    <img src="shells_04_anot.jpg" alt="">
+    <img src="resource/shells_04_anot.jpg" alt="">
   </div>
 
   <div class="box">
     <p>6. To seat the shells properly also on the other side, squeeze the shell gently such that it slightly bends. This will allow you to seat the slot on the shell holder as indicated:</p>
-    <img src="shells_05_anot.jpg" alt="">
+    <img src="resource/shells_05_anot.jpg" alt="">
   </div>
 
   <div class="box">
     <p>7. Release the pressure that was needed to bend the shell; the holder head should slide into the shell slot.</p>
-    <img src="shells_06_anot.jpg" alt="">
+    <img src="resource/shells_06_anot.jpg" alt="">
   </div>
 
   <div class="box">
     <p>8. Repeat the same to seat the remaining slot:</p>
-    <img src="shells_07_anot.jpg" alt="">
+    <img src="resource/shells_07_anot.jpg" alt="">
   </div>
 
   <div class="box">
     <p>9. The first body shell should be properly seated:</p>
-    <img src="shells_08.jpg" alt="">
+    <img src="resource/shells_08.jpg" alt="">
   </div>
 
   <div class="box">
     <p>10. Now repeat the same steps and install the second body shell on the other side of the Flapper:</p>
-    <img src="shells_09.jpg" alt="">
+    <img src="resource/shells_09.jpg" alt="">
   </div>
 
   <div class="box">
     <p>11. Finally, we will install the head shell. It is possible that the top of the fuselage is protected with a cap. In that case, remove this cap first and store it e.g. in the flight case:</p>
-    <img src="shells_10_anot.jpg" alt="">
+    <img src="resource/shells_10_anot.jpg" alt="">
     <br>
-    <img src="shells_11_anot.jpg" alt="">
+    <img src="resource/shells_11_anot.jpg" alt="">
   </div>
 
   <div class="box">
     <p>12. Now you can install the head by pressing it on the top of the fuselage. Pay attention to its correct orientation: the eyes of the head should face the front, the fuselage is at the back, as if it was a spine.</p>
-    <img src="shells_12_anot.jpg" alt="">
+    <img src="resource/shells_12_anot.jpg" alt="">
   </div>
 
   <div class="box">
     <p>13. Pressing the head on the fuselage might require quite some force. To prevent damaging the head, press on the head right above the fuselage (so slightly towards its back) with one hand. When doing so, either place the Flapper on a hard surface and press against it, or use your second hand and hold the flapper by the bottom of the fuselage, where the landing gear is attached.</p>
-    <img src="shells_15_anot.jpg" alt="">
+    <img src="resource/shells_15_anot.jpg" alt="">
   </div>
 
   <div class="box">
@@ -394,7 +394,7 @@
     <div class="important center">
       <p>To remove the head without any damage, we recommend placing your fingers inside of it as indicated, and then pulling it down while holding the Flappers fuselage next to the battery holder.</p>
     </div>
-    <img src="shells_16_anot.jpg" alt="">
+    <img src="resource/shells_16_anot.jpg" alt="">
   </div>
 
 <hr>
@@ -412,7 +412,7 @@
     <p><strong>Pay attention to the correct connector orientation</strong>. Using excessive force, it is possible to plug the connector the other way round, which would damage the Flapper's electronics. If unsure, the red and black colors on the lead wires should be matched.</p>
   </div>
 
-  <img src="battery_connection_anot.jpg" alt="">
+  <img src="resource/battery_connection_anot.jpg" alt="">
 
    <p>Once the battery is connected, place the flapper on a still surface such that its sensors initialize properly. You should hear 3 short beeps, followed by 2 long beeps.</p>
 
@@ -427,7 +427,7 @@
   <div class="box">
     <p>To power the Flapper down completely, disconnect the battery by pulling the two connector sides apart.</p>
 
-  <img src="battery_disconnect_anot.jpg" alt="">
+  <img src="resource/battery_disconnect_anot.jpg" alt="">
 
   <div class="info round">
       <p>Disconnecting the battery might require quite some force. If the connector feels to be "stuck", try to be patient and try to loosen it by wiggling the connectors sideways while pulling on both ends. We do not recommend using tools like pliers as this might damage the power leads.</p>
@@ -438,7 +438,7 @@
   <div class="box">
     <p>The control board has a power switch, which can be used for powering the Flapper off and on, e.g. when performing short flight tests with some idle time in between. The power switch is located on the side of the Flapper, a short press will power the Flapper down, another short press will power it up again.</p>
 
-  <img src="power_switch_anot.jpg" alt="">
+  <img src="resource/power_switch_anot.jpg" alt="">
 
   <div class="info center round" style="width: 80%;">
       <p>The power switch will disconnect power going to the motor speed controllers, actuators as well as other add-on devices, limiting the power usage to a minimum. However, the main board will still consume a small amount of power and thus it should only be used when the Flapper is being switched temporarily.</p>
@@ -465,19 +465,19 @@
   <h3>Default setup (Touch control & BLE)</h3>
   <div class="box">
     <p>1. Install the Crazyflie app on your smartphone:</p>
-    <a href="https://play.google.com/store/apps/details?id=se.bitcraze.crazyfliecontrol2"><img src="google-play-badge.png?nolink&200" alt="Google Play Badge"> </a>
-    <a href="https://apps.apple.com/us/app/crazyflie-2-0/id946151480"><img src="app_store_badge.png?nolink&175" alt="App Store Badge"></a>
+    <a href="https://play.google.com/store/apps/details?id=se.bitcraze.crazyfliecontrol2"><img src="resource/google-play-badge.png?nolink&200" alt="Google Play Badge"> </a>
+    <a href="https://apps.apple.com/us/app/crazyflie-2-0/id946151480"><img src="resource/app_store_badge.png?nolink&175" alt="App Store Badge"></a>
   </div>
 
   <div class="box">
     <p>2. Launch the app, and adjust its settings as below:</p>
-    <img src="app_1.png?500" alt="">
+    <img src="resource/app_1.png?500" alt="">
     <br>
-    <img src="app_2.png?500" alt="">
+    <img src="resource/app_2.png?500" alt="">
     <br>
-    <img src="app_3.png?500" alt="">
+    <img src="resource/app_3.png?500" alt="">
     <br>
-    <img src="app_4.png?500" alt="">
+    <img src="resource/app_4.png?500" alt="">
   </div>
 
   <div class="box">
@@ -490,12 +490,12 @@
 
   <div class="box">
     <p>4. Connect the app to the Flapper. You should see console messages appearing once successful.</p>
-    <img src="app_5.png?500" alt="">
+    <img src="resource/app_5.png?500" alt="">
   </div>
 
   <div class="box">
     <p>5. The app "sticks" have the following functions (when configured to its default "Mode 2"):</p>
-    <img src="app_6.png?500" alt="">
+    <img src="resource/app_6.png?500" alt="">
   </div>
 
   <div class="box">
@@ -560,14 +560,14 @@
   </div>
   <div class="box">
     <p>1. Push the throttle stick to its full-down position and power up the transmitter.</p>
-    <img src="transmitter.jpg?600" alt="">
+    <img src="resource/transmitter.jpg?600" alt="">
   </div>
   <div class="box">
     <p>2. <a href=#power-up-down>Power up</a> the Flapper.</p>
   </div>
   <div class="box">
     <p>3. Check that the LED indicator on the receiver turned yellow (left photo). If it did, you should be set and you can continue with the <a href=#flight-checks>pre-flight checks</a>.</p>
-    <img src="receiver.jpg?700" alt="">
+    <img src="resource/receiver.jpg?700" alt="">
     <div class="info">
       <p>Should you see a blinking red LED instead (middle photo), this indicates a binding problem between the transmitter and the receiver. If you own multiple Flappers, check whether you have not mixed up the transmitters. Otherwise please contact our support and we will help you troubleshoot this.</p>
       <p>Should you see a blue light, this indicates the receiver is configured to communicate over a wrong protocol. Please press the small button indicated with the orange arrow and hold it for at least 5 seconds, then release. After a few seconds, only the yellow LED should remain on.</p>
@@ -581,7 +581,7 @@
   <p>To setup a joystick in CFclient, follow these instructions:</p>
   <a href="https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/inputdevices/">CFclient Joystick Setup Instructions</a>
   <p>As a starting point, we recommend using the following settings that give the most direct response:</p>
-  <img src="cfclient_flight_control_settings.png?500" alt="">
+  <img src="resource/cfclient_flight_control_settings.png?500" alt="">
   <div class="tip center round" style="width: 80%;">
     <p>While using game console controllers as joysticks is possible, the user experience is not ideal because all their analog axes are typically spring-loaded, including the one for throttle.</p>
     <p>We recommend using a drone-specific joystick (used for FPV simulators), or a radio transmitter with a joystick functionality support via USB. Wireless USB dongles are also available for many radio systems, allowing to use radio transmitters as joysticks without the need of a cable connection.</p>
@@ -604,9 +604,9 @@
 
   <div class="box">
     <p>3. Check that the servos are correctly trimmed:</p>
-    <img src="pitch_servo_trim.jpg?400" alt="Pitch Servo Trim">
+    <img src="resource/pitch_servo_trim.jpg?400" alt="Pitch Servo Trim">
     <br>
-    <img src="yaw_servo_trim.jpg?400" alt="Yaw Servo Trim">
+    <img src="resource/yaw_servo_trim.jpg?400" alt="Yaw Servo Trim">
     <p>If they are not (situations indicated with red), perform the <a href=#servo-trim>trimming procedure</a>.</p>
   </div>
 
@@ -693,7 +693,7 @@
   <h4>Lubrication</h4>
   <p>Should you start noticing decreased flight performance (reduced flight time, uneven thrust of the left- and right-wing pair), you might need to lubricate the axles at the indicated locations. Do not overlubricate as this could attract dirt, a little drop is more than enough.</p>
   <div class="centeralign">
-    <img src="service-01.png" alt="Lubrication Points" style="width: 400px;">
+    <img src="resource/service-01.png" alt="Lubrication Points" style="width: 400px;">
   </div>
   <p>For optimal performance, use a plastic-safe gear lubricant such as the <a href="https://labelle-lubricants.com/shop/labelle-102-is-an-extremely-versatite-gear-lubricant/" target="_blank">Labelle 102</a>, in EU available e.g. <a href="https://micro-modele.fr/en/lubrifiants/4758-lubrification-engrenages-en-plastique.html" target="_blank">here</a>. Any medium viscosity general purpose silicone oil should be fine. If possible, select one that is marketed as plastic-safe. Do not use mineral oils as those might weaken the plastic parts.</p>
 
@@ -754,14 +754,14 @@
   <div class="center-box">
     2. Connect to the Flapper by clicking "Scan" (1), selecting the interface <code>radio://...</code> from the drop-down menu (2) and clicking "Connect" (3):
     <br>
-    <img src="cfclient_connect_new.png" alt="Connecting to Flapper" style="max-width: 100%;">
+    <img src="resource/cfclient_connect_new.png" alt="Connecting to Flapper" style="max-width: 100%;">
     <br>
   </div>
 
   <div class="center-box">
     3. Go to the Parameters Tab (1) and open the "flapper" ("_flapper" in older firmware versions) parameter group (2) to adjust the values of the servo-trims. "servPitchNeutr" corresponds to the pitch (top) servo (3). The value represents the percentage of the servo stroke, and is set to 50% by default. It may have already been set to a different value at the factory. Typically, you should only need to adjust this value by a few percent, but a range of 25% to 75% is allowed.
     <br>
-    <img src="cfclient_param1_new.png" alt="Adjusting servo trims" style="max-width: 100%;">
+    <img src="resource/cfclient_param1_new.png" alt="Adjusting servo trims" style="max-width: 100%;">
     <br>
   </div>
 
@@ -769,23 +769,23 @@
     If you do not see the "Parameters" tab, you can enable it in the main menu ("View" --> "Tabs")
   </div>
   <br>
-  <img src="cfclient_param2_new.png" alt="Parameters Tab" style="max-width: 100%;">
+  <img src="resource/cfclient_param2_new.png" alt="Parameters Tab" style="max-width: 100%;">
   <br>
   
   <div class="center-box">
     Keep adjusting the pitch servo trim by typing a new value (4) and clicking Set (5) until the wing leading edges are aligned:
-    <img src="pitch_servo_trim.jpg" alt="Pitch Servo Trim" style="max-width: 100%;">
+    <img src="resource/pitch_servo_trim.jpg" alt="Pitch Servo Trim" style="max-width: 100%;">
     <br>
     Finally, click on Store (6) to save this value permanently and make sure the new stored value is displayed. You might need to clear the previously stored value first. Now the Flapper will use the stored value also after reboot (power-off --> power on).
     <br>
-    <img src="cfclient_stored_value.png" alt="Stored Value" style="max-width: 100%;">
+    <img src="resource/cfclient_stored_value.png" alt="Stored Value" style="max-width: 100%;">
     <br>
   </div>
 
   <div class="center-box">
     4. Follow the same procedure and adjust the yaw servo trim value "servYawNeutr" until the yaw arm is aligned with the servo housing. Do not forget to store the final value!
     <br>
-    <img src="yaw_servo_trim.jpg" alt="Yaw Servo Trim" style="max-width: 100%;">
+    <img src="resource/yaw_servo_trim.jpg" alt="Yaw Servo Trim" style="max-width: 100%;">
     <br>
   </div>
 
@@ -896,11 +896,11 @@
   <p>The Flapper's PCB is equipped with an interface for WS2812b RGB LEDs. The 3.8V power supply can deliver up to 1A. The interface locations vary depending on the PCB version of your Flapper:</p>
 
   <div class="box">
-    <img src="ws2812_pcb_2022_revd.jpg" alt="WS2812 PCB 2022 revD" style="width: 200px;">
+    <img src="resource/ws2812_pcb_2022_revd.jpg" alt="WS2812 PCB 2022 revD" style="width: 200px;">
   </div>
 
   <div class="box">
-    <img src="ws2812_pcb_2021.jpg" alt="WS2812 PCB 2021" style="width: 200px;">
+    <img src="resource/ws2812_pcb_2021.jpg" alt="WS2812 PCB 2021" style="width: 200px;">
     <div class="important">
       Prior to connecting RGB LEDs to the 2021 revision, please read the information in the <a href=#development-addons target="_blank">Custom addons</a> section. <strong>Add a 1k resistor to the signal line</strong> to protect the GPIO of the STM microprocessor.
     </div>
@@ -920,8 +920,8 @@
   <p><strong>Please consult our <a href="flapper_nimble_deck_compatibility.pdf" target="_blank">deck compatibility</a> overview.</strong></p>
   <p>When installing add-on decks by stacking them directly on top of the Flapper's PCB, pay attention to its correct orientation, which depends on the model year of your Flapper! An example of the “Loco positioning deck” orientation after installation is below on the right, for model years newer than 2022 the 2022 photo applies:</p>
   <div class="box">
-    <img src="deck_2022_revd_and_newer.png" alt="Deck 2022 revD and newer">
-    <img src="deck_01.png" alt="Deck orientation example">
+    <img src="resource/deck_2022_revd_and_newer.png" alt="Deck 2022 revD and newer">
+    <img src="resource/deck_01.png" alt="Deck orientation example">
   </div>
 
   <div class="info">
@@ -945,8 +945,8 @@
   </div>
 
   <div class="box">
-    <img src="2escboard_revd_description.jpg" alt="2ESC board revD description">
-    <img src="2escboard_description.jpg" alt="2ESC board description">
+    <img src="resource/2escboard_revd_description.jpg" alt="2ESC board revD description">
+    <img src="resource/2escboard_description.jpg" alt="2ESC board description">
   </div>
 
   <div class="important">

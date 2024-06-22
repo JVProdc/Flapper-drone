@@ -402,7 +402,7 @@
 
 
 
-<h3>Powering the Flapper up & down</h3>
+<h3 id = "power-up-down">Powering the Flapper up & down</h3>
 
   <h4>Connecting the battery</h4>
   <div class="box">
@@ -419,7 +419,7 @@
   <div class="tip center round" style="width: 90%;">
     <p>If you hear only the 3 short beeps and no long beeps, this may indicate the Flapper has been moving too much and its sensors cannot initialize properly. Try to re-plug the battery while keeping the Flapper still.</p>
 
-  <p>If the startup sequence ends with 1 long beep instead of 2 and you are using a <a href="flight-controller#Radio_Transmitter">radio transmitter</a>, check whether your throttle stick is in zero throttle (full down) position.</p>
+  <p>If the startup sequence ends with 1 long beep instead of 2 and you are using a <a href="#radio-transmitter">radio transmitter</a>, check whether your throttle stick is in zero throttle (full down) position.</p>
     </div>
   </div>
 

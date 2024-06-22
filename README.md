@@ -676,7 +676,118 @@
   </div>
 
 
+<hr>
+<br>
 
+
+
+
+<h3 id = "servicing">Servicing</h3>
+
+  <h4>Wing damage</h4>
+  <p>It is possible, that after some crashes, the wings of your Flapper will start to see some damage, such as holes or tears in the wing material, or even broken stiffeners. While the Flapper can fly even with severely damaged wings, fixing any damage as soon as possible is recommended as especially the holes and tears will get larger with operation time.</p>
+  <p>Should you observe any holes or tears in the wing material, patch these with a lightweight, flexible tape. Since 2023, a wing repair tape is included with every Flapper. Otherwise, we recommend the Blenderm surgical tape from 3M.</p>
+  <p>Should one of the wing stiffeners be broken, you can fix it with a splint made of 0.5 mm round CFRP rod, which extends about 2 cm on both sides from the fracture point.</p>
+  <p>Should the wing become irreparable, you can order spare wings from us.</p>
+
+  <h4>Lubrication</h4>
+  <p>Should you start noticing decreased flight performance (reduced flight time, uneven thrust of the left- and right-wing pair), you might need to lubricate the axles at the indicated locations. Do not overlubricate as this could attract dirt, a little drop is more than enough.</p>
+  <div class="centeralign">
+    <img src="service-01.png" alt="Lubrication Points" style="width: 400px;">
+  </div>
+  <p>For optimal performance, use a plastic-safe gear lubricant such as the <a href="https://labelle-lubricants.com/shop/labelle-102-is-an-extremely-versatite-gear-lubricant/" target="_blank">Labelle 102</a>, in EU available e.g. <a href="https://micro-modele.fr/en/lubrifiants/4758-lubrification-engrenages-en-plastique.html" target="_blank">here</a>. Any medium viscosity general purpose silicone oil should be fine. If possible, select one that is marketed as plastic-safe. Do not use mineral oils as those might weaken the plastic parts.</p>
+
+
+
+  <hr>
+  <br>
+
+  <h2>Advanced setup</h2>
+
+
+  <h5>Crazyflie Ecosystem Documentation</h5>
+  
+  <p>The Flapper Nimble+ is powered by the <a href="https://www.bitcraze.io/products/crazyflie-bolt-1-1/" target="_blank">Crazyflie Bolt</a> flight controller, produced by <a href="https://www.bitcraze.io/" target="_blank">Bitcraze AB</a>. It is thus compatible with the Crazyflie software and to some extent also the Crazyflie hardware ecosystem.</p>
+  <p>To learn more about the Crazyflie project, check the following documentation resources:</p>
+  <ul>
+    <li><a href="https://www.bitcraze.io/documentation/system/" target="_blank">Crazyflie ecosystem overview</a></li>
+    <li><a href="https://www.bitcraze.io/documentation/repository/" target="_blank">Crazyflie software repository overview</a></li>
+  </ul>
+
+
+  <hr>
+  <br>
+
+  <h3>Cfclient Installation</h3>
+  
+  <p>Cfclient is a PC application with a GUI that allows you to set the basic parameters, plot and log telemetry signals, and even control the Flapper directly with a joystick, or autonomously using one of the supported positioning systems.</p>
+  <p>If your Flapper is using the latest firmware, install the Cfclient according to the <a href="https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/installation/install/" target="_blank">instructions</a> from its main developer, Bitcraze SE.</p>
+  <p>For instructions on how to use the Cfclient, consult the <a href="https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/" target="_blank">documentation on the website of Bitcraze</a>.</p>
+  
+  <div class="info">
+    We recommend updating to the latest firmware and following the instructions above. If for some reason you cannot, or do not want to, update the firmware to at least <a href="https://github.com/flapper-drones/crazyflie-firmware/commit/2eb461fbffe8ad79df753206821dc2b6c64553c8" target="_blank">this commit</a>, <strong>only then</strong> please follow the <a href="nimbleplus:client-install-legacy" target="_blank">legacy instructions</a>.
+  </div>
+  
+  
+<hr>
+<br>
+
+
+<h3 id = "servo-trim">Servo Trimming</h3>
+  
+  <div class="info">
+    Because the neutral position of each servoactuator is slightly different, servo trim needs to be set for each Flapper individually. The servo trim is already set in production, however, you might need to redo this step if you notice that the Flapper tends to fly forward or backward even at zero pitch input, or tends to rotate left or right. This can happen, if the servos get a big hit due to a crash. You will also need to follow this procedure if you replace the servos or the flight control board, or in some cases after a firmware upgrade.
+  </div>
+  
+  <p>To set the servo trim, you need to have the <a href="client-install" target="_blank">Client application installed</a> on your PC and you will also need the <a href="https://www.bitcraze.io/products/crazyradio-pa/" target="_blank">Crazyradio PA USB dongle</a>.</p>
+  
+  <div class="important">
+    This guide assumes your Flapper is running the latest firmware. For very old firmware versions, if upgrading to the latest firmware is not desirable, please follow the <a href="servo-trim-legacy" target="_blank">legacy instructions</a> instead.
+  </div>
+
+  <div class="center-box">
+    1. Launch the Cflient, e.g. by opening your Terminal/Power Shell and typing:
+    <pre>cfclient</pre>
+    Make sure your Crazyradio PA dongle is connected before starting the Client.
+  </div>
+
+  <div class="center-box">
+    2. Connect to the Flapper by clicking "Scan" (1), selecting the interface <code>radio://...</code> from the drop-down menu (2) and clicking "Connect" (3):
+    <br>
+    <img src="cfclient_connect_new.png" alt="Connecting to Flapper" style="max-width: 100%;">
+    <br>
+  </div>
+
+  <div class="center-box">
+    3. Go to the Parameters Tab (1) and open the "flapper" ("_flapper" in older firmware versions) parameter group (2) to adjust the values of the servo-trims. "servPitchNeutr" corresponds to the pitch (top) servo (3). The value represents the percentage of the servo stroke, and is set to 50% by default. It may have already been set to a different value at the factory. Typically, you should only need to adjust this value by a few percent, but a range of 25% to 75% is allowed.
+    <br>
+    <img src="cfclient_param1_new.png" alt="Adjusting servo trims" style="max-width: 100%;">
+    <br>
+  </div>
+
+  <div class="info">
+    If you do not see the "Parameters" tab, you can enable it in the main menu ("View" --> "Tabs")
+  </div>
+  <br>
+  <img src="cfclient_param2_new.png" alt="Parameters Tab" style="max-width: 100%;">
+  <br>
+  
+  <div class="center-box">
+    Keep adjusting the pitch servo trim by typing a new value (4) and clicking Set (5) until the wing leading edges are aligned:
+    <img src="pitch_servo_trim.jpg" alt="Pitch Servo Trim" style="max-width: 100%;">
+    <br>
+    Finally, click on Store (6) to save this value permanently and make sure the new stored value is displayed. You might need to clear the previously stored value first. Now the Flapper will use the stored value also after reboot (power-off --> power on).
+    <br>
+    <img src="cfclient_stored_value.png" alt="Stored Value" style="max-width: 100%;">
+    <br>
+  </div>
+
+  <div class="center-box">
+    4. Follow the same procedure and adjust the yaw servo trim value "servYawNeutr" until the yaw arm is aligned with the servo housing. Do not forget to store the final value!
+    <br>
+    <img src="yaw_servo_trim.jpg" alt="Yaw Servo Trim" style="max-width: 100%;">
+    <br>
+  </div>
 
 
 

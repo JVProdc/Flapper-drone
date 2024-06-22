@@ -499,7 +499,7 @@
   </div>
 
   <div class="box">
-    <p>6. You are ready for the <a href="flight-first">first flight</a>!</p>
+    <p>6. You are ready for the <a href="#flight-first">first flight</a>!</p>
     <div class="important round">
       <p>Never flown a drone before? Check some tutorials first!</p>
       <ul>
@@ -913,7 +913,7 @@
 <hr>
 <br>
 
-<h3>Add-on decks & custom sensors</h3>
+<h3 id = "development-addons">Add-on decks & custom sensors</h3>
 
   <h4>Add-on decks from Bitcraze AB</h4>
   <p>The Flapper is compatible with some of the <a href="https://store.bitcraze.io/collections/decks" target="_blank">add-on decks designed for Crazyflie 2.0/2.1</a> by Bitcraze AB.</p>

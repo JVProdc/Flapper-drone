@@ -639,6 +639,42 @@
     <p>6. You are ready for the <a href=#flight-first>first flight</a>!</p>
   </div>
 
+  <hr>
+  <br>
+
+
+  <h3 id = "fiight-first">First Flight</h3>
+
+  <div class="info">
+    <p>If it is the first time you will fly the Flapper, let alone any drone, we recommend doing the first test flights in a <strong>spacious room</strong>, preferably <strong>free of obstacles</strong>. Before the first flights, place the Flapper as far as possible from the walls and other objects. The larger the room, the more relaxed you will be and the faster you will advance, without risking crashes and potential damage to your Flapper.</p>
+  </div>
+
+  <div class="box">
+    <p>1. The first time you fly the Flapper, perform a short lift-off and touch down and observe for any drift:</p>
+    <div class="centeralign thumbnail">
+      <a href="https://www.youtube.com/watch?v=RdGI2lX5B4o" target="_blank">
+        <img src="https://img.youtube.com/vi/RdGI2lX5B4o/0.jpg" alt="Short Lift-off and Touch Down">
+      </a>
+      <p>(please turn YouTube close captions on to see the instructions)</p>
+    </div>
+    <p>If you observe too much drift in forward/backward direction, you can adjust the pitch <a href=#servo-trim>servo trim</a>.</p>
+    <p>Drift in left/right direction should only be very minor. Larger drift typically means one of the wings is damaged or one of the gearboxes/flapping mechanisms is not operating correctly.</p>
+  </div>
+
+  <div class="box">
+    <p>2. Finally, carefully check that all 4 control inputs respond correctly:</p>
+    <div class="centeralign thumbnail">
+      <a href="https://www.youtube.com/watch?v=kpT4TQWK218" target="_blank">
+        <img src="https://img.youtube.com/vi/kpT4TQWK218/0.jpg" alt="Control Inputs Check">
+      </a>
+      <p>(please turn YouTube close captions on to see the instructions)</p>
+    </div>
+  </div>
+
+  <div class="box">
+    <p>3. The Flapper is ready for more acrobatic flights, have fun!</p>
+  </div>
+
 
 
 

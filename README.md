@@ -612,8 +612,10 @@
 
   <div class="box">
     <p>4. Check that all the actuators are working correctly:</p>
-    <div class="centeralign">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ovEV3D6BjAM?rel=0&autoplay=0&loop=1&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+    <div class="centeralign thumbnail">
+      <a href="https://www.youtube.com/watch?v=ovEV3D6BjAM" target="_blank">
+        <img src="https://img.youtube.com/vi/ovEV3D6BjAM/0.jpg" alt="Actuator Check">
+      </a>
       <p>(please turn on the close captions to see the instructions)</p>
     </div>
   </div>
@@ -625,8 +627,10 @@
 
   <div class="box">
     <p>5. Next, test the auto-stabilization:</p>
-    <div class="centeralign">
-      <a href src="https://www.youtube.com/embed/a19aLzMQYFY?rel=0&autoplay=0&loop=1&cc_load_policy=1" frameborder="0" allowfullscreen> Here </a>
+    <div class="centeralign thumbnail">
+      <a href="https://www.youtube.com/watch?v=a19aLzMQYFY" target="_blank">
+        <img src="https://img.youtube.com/vi/a19aLzMQYFY/0.jpg" alt="Auto-stabilization Test">
+      </a>
       <p>(please turn on the close captions to see the instructions)</p>
     </div>
   </div>

@@ -135,7 +135,7 @@
   </tr>
 </table>
 <p>In the interests of continuous product improvement all specifications are subject to change without notice.</p>
-<p>The latest datasheet can be downloaded <a href="nimbleplus:flapper_nimbleplus_specs_2024-03.pdf">here</a>.</p>
+<p>The latest datasheet can be downloaded <a href="flapper_nimbleplus_specs_2024-03.pdf">here</a>.</p>
 
 <hr>
 <br>
@@ -870,6 +870,127 @@
     This functionality is not yet fully supported. The firmware name does not show up correctly and you might upload a wrong firmware, <strong>which can lead to damaged servos</strong>. Before this gets fixed, please use methods A) or B), or experiment at your own risk.
   </div>
 
+<hr>
+<br>
 
+<h2> Development Resources </h2>
+
+
+<h3>Integrated "flapper deck"</h3>
+  <p>The Flapper's PCB already includes a microSD card slot for logging, an interface for WS2812b RGB LEDs and, from model year 2022 (PCB revision D), also a current sensor.</p>
+
+  <h4>Micro SD logging</h4>
+  <p>To use the high-speed micro SD card logging, you need to set-up the logging configuration on your uSD card first before you plug it into the uSD slot according to <a href="https://www.bitcraze.io/products/micro-sd-card-deck/" target="_blank">these instructions</a> (tab "Usage").</p>
+
+  <div class="info">
+    If you experience problems with logging, first make sure that your firmware has the uSD deck enabled. The easiest way to check this is via the console messages in the CFclient or in the phone App.
+    <br><br>
+    If the deck is enabled, but the uSD card is not detected/mounted correctly, the card could be corrupted. Formatting it using <a href="https://www.sdcard.org/downloads/formatter/" target="_blank">this utility</a> usually fixes the issue.
+  </div>
+
+  <div class="info">
+    Prior to model year 2022, if your Flapper came equipped with an external receiver, micro SD logging function is NOT enabled by default due to pin conflict. You can disable the receiver and enable micro SD card in the firmware. If you would like to use both at the same time, a small hardware modification is necessary, please contact our support for instructions.
+  </div>
+
+  <h4>RGB LEDs</h4>
+  <p>The Flapper's PCB is equipped with an interface for WS2812b RGB LEDs. The 3.8V power supply can deliver up to 1A. The interface locations vary depending on the PCB version of your Flapper:</p>
+
+  <div class="box">
+    <img src="ws2812_pcb_2022_revd.jpg" alt="WS2812 PCB 2022 revD" style="width: 200px;">
+  </div>
+
+  <div class="box">
+    <img src="ws2812_pcb_2021.jpg" alt="WS2812 PCB 2021" style="width: 200px;">
+    <div class="important">
+      Prior to connecting RGB LEDs to the 2021 revision, please read the information in the <a href=#custom_add-ons target="_blank">Custom addons</a> section. <strong>Add a 1k resistor to the signal line</strong> to protect the GPIO of the STM microprocessor.
+    </div>
+  </div>
+
+  <h4>Current sensing (model year 2022 and newer)</h4>
+  <p>Newer Flapper Drones have also an integrated current sensing functionality. The current and power values can be found in the "current" log group. The current sensing uses <a href="https://nl.farnell.com/rohm/pmr10ezpfv4l00/current-sense-res-0r004-1-500/dp/2696397" target="_blank">this resistor</a> and an ADC of the Bolt's STM. If precise measurements are needed, we recommend calibrating the sensing constant "ampsPerVolt" in the "current" parameter group. In the same parameter group, you can also tune the low pass complementary filter constant "filtAlpha" (0 to disable, 1 for infinite response).</p>
+
+
+<hr>
+<br>
+
+<h3>Add-on decks & custom sensors</h3>
+
+  <h4>Add-on decks from Bitcraze AB</h4>
+  <p>The Flapper is compatible with some of the <a href="https://store.bitcraze.io/collections/decks" target="_blank">add-on decks designed for Crazyflie 2.0/2.1</a> by Bitcraze AB.</p>
+  <p><strong>Please consult our <a href="flapper_nimble_deck_compatibility.pdf" target="_blank">deck compatibility</a> overview.</strong></p>
+  <p>When installing add-on decks by stacking them directly on top of the Flapper's PCB, pay attention to its correct orientation, which depends on the model year of your Flapper! An example of the “Loco positioning deck” orientation after installation is below on the right, for model years newer than 2022 the 2022 photo applies:</p>
+  <div class="box">
+    <img src="deck_2022_revd_and_newer.png" alt="Deck 2022 revD and newer">
+    <img src="deck_01.png" alt="Deck orientation example">
+  </div>
+
+  <div class="info">
+    For decks requiring horizontal installation (e.g. Lighthouse), you can also use an extension cable and place the decks to the top/bottom of the Flapper. For some of the decks, you can find 3d-printable stl files <a href="https://github.com/flapper-drones/3Dmodels" target="_blank">here</a>. Instructions on how to make the extension cable are included <a href="flapper_nimble_deck_compatibility.pdf" target="_blank">here</a>, we can also supply a beta version of an extension cable upon request.
+  </div>
+
+  <h4>Custom add-ons</h4>
+  <p>If you plan to add your own sensors/decks, please see the pinout schematics below:</p>
+  <div class="info">
+    The Flapper Drone PCB has <strong>two grounds</strong> which are NOT inter-connected (2S LiPo and STM). The ground marked by black squares connects to the 2S battery and is <strong>switchable</strong>. With the standard Flapper firmware, this ground gets disconnected when you power off the Bolt using its power button. This disconnects the ESCs and servomotors from power, so the battery discharge rate in this state is very low. Still, for <strong>storage always disconnect the battery</strong>.
+  </div>
+
+  <div class="important">
+    <strong>PAY ATTENTION:</strong> If you plan to add additional devices, which you'd like to power from the 2S battery, and which need to be connected also to the STM of the Bolt (e.g. an external receiver), <strong>always place a ~1k resistor between the GPIO and your device</strong> to protect the GPIO. Otherwise, because the 2S ground on the board is switchable, when powered down with the switch on the Bolt the 2S voltage will get to the GPIO, which will likely get damaged as a result.
+    <br><br>
+    <strong> For model 2021, this applies also to the WS2812B/WS2813 RGB LEDs, use a 1k resistor to protect the GPIO! </strong>
+    <br>
+    From model 2022 (revD), the pads for WS2812B RGB LEDs and for CPPM are already protected.
+    <br><br>
+    Alternatively, consider using VCC/V-USB available from the Bolt <strong>and the STM ground</strong> on the left side connector (but check the <a href="https://store.bitcraze.io/products/crazyflie-bolt" target="_blank">power limitations</a> of the Bolt board first).
+  </div>
+
+  <div class="box">
+    <img src="2escboard_revd_description.jpg" alt="2ESC board revD description">
+    <img src="2escboard_description.jpg" alt="2ESC board description">
+  </div>
+
+  <div class="important">
+    <strong>Model 2021 - PAY ATTENTION:</strong> Due to a manufacturing issue, the ground marked with "READ MANUAL" should only be used if absolutely necessary, and extreme caution needs to be taken when soldering. When finished soldering double check that the 2S ground is still disconnected from the GND on the side connector (and the uSD card slot housing). If that happens, try to remove any excess solder and double check. Contact our support if needed.
+    <br><br>
+    <strong>We recommend using another square-marked ground instead.</strong>
+  </div>
+
+
+<hr>
+<br>
+
+<h3>Software resources</h3>
+
+  <div class="info">
+    Since October 2022, the Nimble+ firmware is included in the standard crazyflie-firmware repository maintained by Bitcraze AB, and should be compatible with the rest of the Crazyflie software ecosystem.
+  </div>
+
+  <h3>Firmware</h3>
+  <ul>
+    <li><a href="https://github.com/bitcraze/crazyflie-firmware/" target="_blank">Official Crazyflie firmware repository</a></li>
+  </ul>
+
+  <div class="important">
+    <strong>Always make sure to use the Flapper platform when building the firmware. Other platforms included are made for quadcopters and might damage your Flapper Drone!</strong>
+    <br><br>
+    If you upload the wrong code, this might force the Flapper's servoactuators to their limit positions. Should this happen, please power down the Flapper using the power button on the Crazyflie Bolt as soon as possible, as the servo motors might overheat and get damaged otherwise. When you are ready to upload the correct firmware, long-press the power button to power the control board in bootloader mode and upload the correct firmware.
+  </div>
+
+  <h3>Python libraries</h3>
+  <ul>
+    <li><a href="https://github.com/bitcraze/crazyflie-lib-python" target="_blank">Official Python libraries & scripts (API)</a></li>
+  </ul>
+
+  <h3>PC client</h3>
+  <ul>
+    <li><a href="https://github.com/bitcraze/crazyflie-clients-python" target="_blank">Official PC client</a></li>
+  </ul>
+
+  <h3>Legacy repositories</h3>
+  <ul>
+    <li><a href="https://github.com/flapper-drones/crazyflie-firmware/tree/nimble_plus" target="_blank">Legacy firmware based on 2022.1 release</a></li>
+    <li><a href="https://github.com/flapper-drones/crazyflie-lib-python" target="_blank">Legacy Flapper Drones fork of Python libraries & scripts (API)</a></li>
+    <li><a href="https://github.com/flapper-drones/crazyflie-clients-python" target="_blank">Legacy Flapper Drones fork of PC client</a></li>
+  </ul>
 
 

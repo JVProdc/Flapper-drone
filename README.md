@@ -453,13 +453,13 @@
 
   <hr>
   <br>
-
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
   <h2> Manual Flight</h2>
 
   <h3>Smartphone App</h3>
   <p>Any NimblePlus drone can be flown using a (recent) smartphone with BLE support running Android or iOS.</p>
   <div class="info center round">
-    <p>If you plan to fly your Flapper manually on a regular basis, we recommend using a dedicated <a href="flight-controller#Radio transmitter">radio transmitter</a> for the best user experience.</p>
+    <p>If you plan to fly your Flapper manually on a regular basis, we recommend using a dedicated <a href="#radio-transmitter">radio transmitter</a> for the best user experience.</p>
   </div>
 
   <h3>Default setup (Touch control & BLE)</h3>
@@ -517,7 +517,7 @@
     <li>For longer range, or if you want to fly multiple Flappers at a time, you can connect the <a href="https://www.bitcraze.io/products/crazyradio-pa/">Crazyradio PA USB dongle</a> to your phone via an <a href="https://en.wikipedia.org/wiki/USB_On-The-Go">OTG cable</a> (only supported on Android devices).</li>
   </ul>
 
-  <h2>Radio transmitter</h2>
+  <h2 id = "radio-transmitter">Radio transmitter</h2>
 
   <h3>Radio transmitter with a Multimodule</h3>
   <div class="tip center round" style="width: 80%;">

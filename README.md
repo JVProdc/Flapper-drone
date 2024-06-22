@@ -481,7 +481,7 @@
   </div>
 
   <div class="box">
-    <p>3. <a href="power-up-down">Power up</a> the Flapper.</p>
+    <p>3. <a href=#power-up-down>Power up</a> the Flapper.</p>
     <div class="important round">
       <p>Immediately after the power-up, the Flapper should remain stable such that its on-board sensors initialize correctly.</p>
       <p>Wait until the drone stops beeping before moving it! You should hear: <strong>3 short beeps --> 2 long beeps</strong></p>

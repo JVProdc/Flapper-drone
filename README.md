@@ -718,7 +718,7 @@
   <hr>
   <br>
 
-  <h3>Cfclient Installation</h3>
+  <h3 id = "client-install" >Cfclient Installation</h3>
   
   <p>Cfclient is a PC application with a GUI that allows you to set the basic parameters, plot and log telemetry signals, and even control the Flapper directly with a joystick, or autonomously using one of the supported positioning systems.</p>
   <p>If your Flapper is using the latest firmware, install the Cfclient according to the <a href="https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/installation/install/" target="_blank">instructions</a> from its main developer, Bitcraze SE.</p>
@@ -739,7 +739,7 @@
     Because the neutral position of each servoactuator is slightly different, servo trim needs to be set for each Flapper individually. The servo trim is already set in production, however, you might need to redo this step if you notice that the Flapper tends to fly forward or backward even at zero pitch input, or tends to rotate left or right. This can happen, if the servos get a big hit due to a crash. You will also need to follow this procedure if you replace the servos or the flight control board, or in some cases after a firmware upgrade.
   </div>
   
-  <p>To set the servo trim, you need to have the <a href="client-install" target="_blank">Client application installed</a> on your PC and you will also need the <a href="https://www.bitcraze.io/products/crazyradio-pa/" target="_blank">Crazyradio PA USB dongle</a>.</p>
+  <p>To set the servo trim, you need to have the <a href=#client-install target="_blank">Client application installed</a> on your PC and you will also need the <a href="https://www.bitcraze.io/products/crazyradio-pa/" target="_blank">Crazyradio PA USB dongle</a>.</p>
   
   <div class="important">
     This guide assumes your Flapper is running the latest firmware. For very old firmware versions, if upgrading to the latest firmware is not desirable, please follow the <a href="servo-trim-legacy" target="_blank">legacy instructions</a> instead.

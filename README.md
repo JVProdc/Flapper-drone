@@ -591,7 +591,7 @@
   <br>
 
 
-  <h3 id = "flightt-checks">Pre-flight Checks</h3>
+  <h3 id = "flight-checks">Pre-flight Checks</h3>
   <p>Before every flight, perform the following checks:</p>
 
   <div class="box">

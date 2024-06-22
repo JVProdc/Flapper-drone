@@ -402,9 +402,9 @@
 
 
 
-<h5>Powering the Flapper up & down</h5>
+<h3>Powering the Flapper up & down</h3>
 
-  <h6>Connecting the battery</h6>
+  <h4>Connecting the battery</h4>
   <div class="box">
     <p>To power the Flapper up, simply plug in its battery.</p>
 
@@ -423,7 +423,7 @@
     </div>
   </div>
 
-  <h6>Disconnecting the battery</h6>
+  <h4>Disconnecting the battery</h4>
   <div class="box">
     <p>To power the Flapper down completely, disconnect the battery by pulling the two connector sides apart.</p>
 
@@ -434,7 +434,7 @@
     </div>
   </div>
 
-  <h6>The power switch</h6>
+  <h4>The power switch</h4>
   <div class="box">
     <p>The control board has a power switch, which can be used for powering the Flapper off and on, e.g. when performing short flight tests with some idle time in between. The power switch is located on the side of the Flapper, a short press will power the Flapper down, another short press will power it up again.</p>
 
@@ -450,6 +450,146 @@
   <p>Otherwise, the small current the main board is using in its idle state will slowly discharge the battery, which will eventually get fully discharged and irreversibly damaged as a result.</p>
     </div>
   </div>
+
+  <hr>
+  <br>
+
+  <h2> Manual Flight</h2>
+
+  <h3>Smartphone App</h3>
+  <p>Any NimblePlus drone can be flown using a (recent) smartphone with BLE support running Android or iOS.</p>
+  <div class="info center round">
+    <p>If you plan to fly your Flapper manually on a regular basis, we recommend using a dedicated <a href="flight-controller#Radio transmitter">radio transmitter</a> for the best user experience.</p>
+  </div>
+
+  <h3>Default setup (Touch control & BLE)</h3>
+  <div class="box">
+    <p>1. Install the Crazyflie app on your smartphone:</p>
+    <a href="https://play.google.com/store/apps/details?id=se.bitcraze.crazyfliecontrol2"><img src="google-play-badge.png?nolink&200" alt="Google Play Badge"> </a>
+    <a href="https://apps.apple.com/us/app/crazyflie-2-0/id946151480"><img src="app_store_badge.png?nolink&175" alt="App Store Badge"></a>
+  </div>
+
+  <div class="box">
+    <p>2. Launch the app, and adjust its settings as below:</p>
+    <img src="app_1.png?500" alt="">
+    <br>
+    <img src="app_2.png?500" alt="">
+    <br>
+    <img src="app_3.png?500" alt="">
+    <br>
+    <img src="app_4.png?500" alt="">
+  </div>
+
+  <div class="box">
+    <p>3. <a href="power-up-down">Power up</a> the Flapper.</p>
+    <div class="important round">
+      <p>Immediately after the power-up, the Flapper should remain stable such that its on-board sensors initialize correctly.</p>
+      <p>Wait until the drone stops beeping before moving it! You should hear: <strong>3 short beeps --> 2 long beeps</strong></p>
+    </div>
+  </div>
+
+  <div class="box">
+    <p>4. Connect the app to the Flapper. You should see console messages appearing once successful.</p>
+    <img src="app_5.png?500" alt="">
+  </div>
+
+  <div class="box">
+    <p>5. The app "sticks" have the following functions (when configured to its default "Mode 2"):</p>
+    <img src="app_6.png?500" alt="">
+  </div>
+
+  <div class="box">
+    <p>6. You are ready for the <a href="flight-first">first flight</a>!</p>
+    <div class="important round">
+      <p>Never flown a drone before? Check some tutorials first!</p>
+      <ul>
+        <li><a href="https://dronenodes.com/how-to-fly-a-quadcopter-beginner-guide/">How to Fly a Quadcopter - Beginner Guide</a></li>
+        <li><a href="https://youtu.be/P3E2pQnEDRI">Beginner Drone Flying Tutorial</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Advanced setup</h3>
+  <ul>
+    <li>To fly faster, you can increase the max roll/pitch values. Be careful as the Flapper might get eventually unstable, but values below 60 degrees will work fine.</li>
+    <li>For more precise control, you can connect a gamepad (e.g. for Xbox or Playstation) to your smartphone and select "gamepad" in the settings.</li>
+    <li>In the app settings, you can also switch to "gyroscope" control and control the pitch and roll by tilting your phone.</li>
+    <li>For longer range, or if you want to fly multiple Flappers at a time, you can connect the <a href="https://www.bitcraze.io/products/crazyradio-pa/">Crazyradio PA USB dongle</a> to your phone via an <a href="https://en.wikipedia.org/wiki/USB_On-The-Go">OTG cable</a> (only supported on Android devices).</li>
+  </ul>
+
+  <h2>Radio transmitter</h2>
+
+  <h3>Radio transmitter with a Multimodule</h3>
+  <div class="tip center round" style="width: 80%;">
+    <p>If you purchased your Flapper as a "Starter Kit", this is the option applicable to you. You can start at item 2.</p>
+  </div>
+  <div class="box center" style="width: 80%;">
+    <p>If you own an Open-TX/Edge-TX transmitter with a 4-in-1 or 5-in-1 multimodule, you should be able to connect to your Flapper even if it does not have a dedicated receiver installed.</p>
+  </div>
+  <div class="important center round" style="width: 80%;">
+    <p>Please note that this method remains experimental and further software development is needed to also receive telemetry. If you want a stable long range connection (e.g. to fly outdoors) or telemetry, please consider getting an <a href="flight-controller#Radio Transmitter (Flapper with an external receiver)">external receiver</a>.</p>
+  </div>
+  <div class="box">
+    <p>1. You will need a specific firmware for the multimodule, which can be downloaded here (stm version, for Jumper T-Lite, T-Pro, ...):</p>
+    <a href="multi-stm-1.3.3.25-cflie3.zip">multi-stm-1.3.3.25-cflie3.zip</a>
+    <p>If you need to compile the firmware for another platform, the source code is available in this Github fork:</p>
+    <a href="https://github.com/flapper-drones/DIY-Multiprotocol-TX-Module/tree/CFlie_improved">Github Repository</a>
+    <p>Please consult the manual of your transmitter on how to flash the multimodule.</p>
+  </div>
+  <div class="box">
+    <p>2. <a href="power-up-down">Power up</a> the Flapper.</p>
+  </div>
+  <div class="box">
+    <p>3. Push the throttle stick on the transmitter to its full-down position and power the transmitter up.</p>
+  </div>
+  <div class="important center round" style="width: 80%;">
+    <p>If you turn the transmitter on first and the Flapper second, the Flapper might get stuck when booting and you will only see blue LEDs blinking rapidly on its flight control board. We have fixed this in the latest multimodule firmware, please reflash your multimodule with the version linked in point 1.</p>
+  </div>
+  <div class="box">
+    <p>4. Check that the yellow LED on the Crazyflie Bolt flight control board is lit up and blinking rapidly. If it is, you are set and can continue with the <a href="nimbleplus:flight-checks">pre-flight checks</a>.</p>
+  </div>
+  <div class="box">
+    <p>5. When done flying, first power down the Flapper and then the transmitter.</p>
+  </div>
+
+  <h3>Generic radio transmitter (Flapper with an external receiver)</h3>
+  <div class="box" style="width: 80%;">
+    <p>If you plan to fly the Flapper manually on a regular basis, we recommend controlling it using a dedicated Radio transmitter and receiver, as it offers the most stable connection and the best user experience.</p>
+    <p>If you have NOT purchased the Flapper with the optional transmitter and receiver already, you can also add a receiver yourself. See <a href="nimbleplus:development-addons">the addon page</a> on how this can be done. This should work with any radio system as long as the receiver can output CPPM. We recommend FrSky R-XSR.</p>
+    <p>The following instructions apply for the transmitter and the on-board receiver that is delivered with the Flapper as an option. The exact model of the transmitter delivered varies depending on the model year of your Flapper. Please consult the provided manual on how to charge and power your transmitter on and off.</p>
+  </div>
+  <div class="box">
+    <p>1. Push the throttle stick to its full-down position and power up the transmitter.</p>
+    <img src="transmitter.jpg?600" alt="">
+  </div>
+  <div class="box">
+    <p>2. <a href="power-up-down">Power up</a> the Flapper.</p>
+  </div>
+  <div class="box">
+    <p>3. Check that the LED indicator on the receiver turned yellow (left photo). If it did, you should be set and you can continue with the <a href="nimbleplus:flight-checks">pre-flight checks</a>.</p>
+    <img src="receiver.jpg?700" alt="">
+    <div class="info">
+      <p>Should you see a blinking red LED instead (middle photo), this indicates a binding problem between the transmitter and the receiver. If you own multiple Flappers, check whether you have not mixed up the transmitters. Otherwise please contact our support and we will help you troubleshoot this.</p>
+      <p>Should you see a blue light, this indicates the receiver is configured to communicate over a wrong protocol. Please press the small button indicated with the orange arrow and hold it for at least 5 seconds, then release. After a few seconds, only the yellow LED should remain on.</p>
+    </div>
+  </div>
+  <div class="box">
+    <p>4. When done flying, first power down the Flapper and then the transmitter.</p>
+  </div>
+
+  <h3>PC client & Joystick</h3>
+  <p>To setup a joystick in CFclient, follow these instructions:</p>
+  <a href="https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/inputdevices/">CFclient Joystick Setup Instructions</a>
+  <p>As a starting point, we recommend using the following settings that give the most direct response:</p>
+  <img src="cfclient_flight_control_settings.png?500" alt="">
+  <div class="tip center round" style="width: 80%;">
+    <p>While using game console controllers as joysticks is possible, the user experience is not ideal because all their analog axes are typically spring-loaded, including the one for throttle.</p>
+    <p>We recommend using a drone-specific joystick (used for FPV simulators), or a radio transmitter with a joystick functionality support via USB. Wireless USB dongles are also available for many radio systems, allowing to use radio transmitters as joysticks without the need of a cable connection.</p>
+  </div>
+
+  <hr>
+  <br>
+  
 
 
 

@@ -527,7 +527,7 @@
     <p>If you own an Open-TX/Edge-TX transmitter with a 4-in-1 or 5-in-1 multimodule, you should be able to connect to your Flapper even if it does not have a dedicated receiver installed.</p>
   </div>
   <div class="important center round" style="width: 80%;">
-    <p>Please note that this method remains experimental and further software development is needed to also receive telemetry. If you want a stable long range connection (e.g. to fly outdoors) or telemetry, please consider getting an <a href="flight-controller#Radio Transmitter (Flapper with an external receiver)">external receiver</a>.</p>
+    <p>Please note that this method remains experimental and further software development is needed to also receive telemetry. If you want a stable long range connection (e.g. to fly outdoors) or telemetry, please consider getting an <a href=#radio-transmitter>external receiver</a>.</p>
   </div>
   <div class="box">
     <p>1. You will need a specific firmware for the multimodule, which can be downloaded here (stm version, for Jumper T-Lite, T-Pro, ...):</p>
@@ -546,7 +546,7 @@
     <p>If you turn the transmitter on first and the Flapper second, the Flapper might get stuck when booting and you will only see blue LEDs blinking rapidly on its flight control board. We have fixed this in the latest multimodule firmware, please reflash your multimodule with the version linked in point 1.</p>
   </div>
   <div class="box">
-    <p>4. Check that the yellow LED on the Crazyflie Bolt flight control board is lit up and blinking rapidly. If it is, you are set and can continue with the <a href="nimbleplus:flight-checks">pre-flight checks</a>.</p>
+    <p>4. Check that the yellow LED on the Crazyflie Bolt flight control board is lit up and blinking rapidly. If it is, you are set and can continue with the <a href="flight-checks">pre-flight checks</a>.</p>
   </div>
   <div class="box">
     <p>5. When done flying, first power down the Flapper and then the transmitter.</p>
@@ -555,7 +555,7 @@
   <h3>Generic radio transmitter (Flapper with an external receiver)</h3>
   <div class="box" style="width: 80%;">
     <p>If you plan to fly the Flapper manually on a regular basis, we recommend controlling it using a dedicated Radio transmitter and receiver, as it offers the most stable connection and the best user experience.</p>
-    <p>If you have NOT purchased the Flapper with the optional transmitter and receiver already, you can also add a receiver yourself. See <a href="nimbleplus:development-addons">the addon page</a> on how this can be done. This should work with any radio system as long as the receiver can output CPPM. We recommend FrSky R-XSR.</p>
+    <p>If you have NOT purchased the Flapper with the optional transmitter and receiver already, you can also add a receiver yourself. See <a href="development-addons">the addon page</a> on how this can be done. This should work with any radio system as long as the receiver can output CPPM. We recommend FrSky R-XSR.</p>
     <p>The following instructions apply for the transmitter and the on-board receiver that is delivered with the Flapper as an option. The exact model of the transmitter delivered varies depending on the model year of your Flapper. Please consult the provided manual on how to charge and power your transmitter on and off.</p>
   </div>
   <div class="box">
@@ -563,10 +563,10 @@
     <img src="transmitter.jpg?600" alt="">
   </div>
   <div class="box">
-    <p>2. <a href="power-up-down">Power up</a> the Flapper.</p>
+    <p>2. <a href=#power-up-down>Power up</a> the Flapper.</p>
   </div>
   <div class="box">
-    <p>3. Check that the LED indicator on the receiver turned yellow (left photo). If it did, you should be set and you can continue with the <a href="nimbleplus:flight-checks">pre-flight checks</a>.</p>
+    <p>3. Check that the LED indicator on the receiver turned yellow (left photo). If it did, you should be set and you can continue with the <a href="flight-checks">pre-flight checks</a>.</p>
     <img src="receiver.jpg?700" alt="">
     <div class="info">
       <p>Should you see a blinking red LED instead (middle photo), this indicates a binding problem between the transmitter and the receiver. If you own multiple Flappers, check whether you have not mixed up the transmitters. Otherwise please contact our support and we will help you troubleshoot this.</p>

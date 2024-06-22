@@ -742,7 +742,7 @@
   <p>To set the servo trim, you need to have the <a href=#client-install target="_blank">Client application installed</a> on your PC and you will also need the <a href="https://www.bitcraze.io/products/crazyradio-pa/" target="_blank">Crazyradio PA USB dongle</a>.</p>
   
   <div class="important">
-    This guide assumes your Flapper is running the latest firmware. For very old firmware versions, if upgrading to the latest firmware is not desirable, please follow the <a href="servo-trim-legacy" target="_blank">legacy instructions</a> instead.
+    This guide assumes your Flapper is running the latest firmware. For very old firmware versions, if upgrading to the latest firmware is not desirable, please follow the <a href=#servo-trim-legacy target="_blank">legacy instructions</a> instead.
   </div>
 
   <div class="center-box">
@@ -902,7 +902,7 @@
   <div class="box">
     <img src="ws2812_pcb_2021.jpg" alt="WS2812 PCB 2021" style="width: 200px;">
     <div class="important">
-      Prior to connecting RGB LEDs to the 2021 revision, please read the information in the <a href=#custom_add-ons target="_blank">Custom addons</a> section. <strong>Add a 1k resistor to the signal line</strong> to protect the GPIO of the STM microprocessor.
+      Prior to connecting RGB LEDs to the 2021 revision, please read the information in the <a href=#development-addons target="_blank">Custom addons</a> section. <strong>Add a 1k resistor to the signal line</strong> to protect the GPIO of the STM microprocessor.
     </div>
   </div>
 

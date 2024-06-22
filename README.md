@@ -790,5 +790,86 @@
   </div>
 
 
+  <hr>
+  <br>
+
+  <h3>Firmware Update</h3>
+
+  <h4>A) From the latest release using the Cfclient</h4>
+  <p>The easiest way to update your Flapper's firmware is via the Cflient application, where you can get the latest stable release. Compared to method B), the pre-compiled firmware might not have the very latest developments included.</p>
+
+  <p>For instructions on how to do that, please consult the user guide of Cfclient, section Firmware Upgrade:
+  <a href="https://www.bitcraze.io/documentation/repository/crazyflie-clients-python/master/userguides/userguide_client/" target="_blank">Cfclient Firmware Upgrade</a>
+  </p>
+
+  <div class="important">
+    Make sure to select the right platform, i.e. <strong>flapper</strong>. Uploading the firmware for other platforms ('cf2', 'bolt', 'tag', ...) <strong>might cause damage to Flapper's servos</strong>!
+    <br><br>
+    If you upload the wrong code, this might force the Flapper's servoactuators to their limit positions. Should this happen, please power down the Flapper using the power button on the Crazyflie Bolt as soon as possible, as the servo motors might overheat and get damaged otherwise. When you are ready to upload the correct firmware, long-press the power button to power the control board in bootloader mode and upload the correct firmware.
+  </div>
+
+  <div class="info">
+    If your Flapper is equipped with an external receiver, or was delivered prior to 2022, this method will not work for you. You will need to compile the firmware yourself (method B) while adjusting the default configuration.
+    <br><br>
+    If compiling firmwares is not your thing, we might be able to send you the pre-compiled files. Please contact our support.
+  </div>
+
+  <h4>B) From source code</h4>
+  <p>If you plan to do further development of the Flapper's firmware, or if you have a non-standard configuration, you will need to build it from the source code.</p>
+
+  <div class="info">
+    Since October 2022, the Nimble+ firmware is included in the standard crazyflie-firmware repository maintained by Bitcraze AB.
+    <br><br>
+    The legacy instructions for old firmware versions can be found <a href=#firmware-update-legacy target="_blank">here</a>, but we recommend the latest firmware.
+  </div>
+
+  <div class="center-box">
+    1. For general instructions on how to build and flash the firmware from the source code please refer to the <a href="https://www.bitcraze.io/documentation/repository/crazyflie-firmware/master/building-and-flashing/build/" target="_blank">Crazyflie project documentation</a>.
+  </div>
+
+  <div class="center-box">
+    2. For the Flapper Nimble+, you need to build the firmware for the "flapper" platform. In most cases, this can be done simply by:
+    <pre>make flapper_defconfig<br>make</pre>
+  </div>
+
+  <div class="important">
+    You will need to <strong>adjust the default configuration</strong> first if:
+    <ul>
+      <li>your Flapper has an older PCB version (rev B, delivered before 2022)</li>
+      <li>your Flapper has an external receiver installed</li>
+      <li>your Flapper was configured according to your special requirements</li>
+    </ul>
+  </div>
+
+  <div class="center-box">
+    3. You can adjust the default configuration by editing the following file:
+    <a href="https://github.com/bitcraze/crazyflie-firmware/blob/master/configs/flapper_defconfig" target="_blank">/configs/flapper_defconfig</a>
+    <br><br>
+    If your Flapper is equipped with an external receiver, include:
+    <pre>CONFIG_DECK_FLAPPER_EXTRX_ENABLE=y</pre>
+    If your Flapper has an older PCB version (rev B, delivered before 2022), include:
+    <pre>CONFIG_POWER_DISTRIBUTION_FLAPPER_REVB=y</pre>
+  </div>
+
+  <div class="center-box">
+    4. Default gains and some other settings of the flapper platform can be changed here:
+    <a href="https://github.com/bitcraze/crazyflie-firmware/blob/master/src/platform/interface/platform_defaults_flapper.h" target="_blank">/src/platform/interface/platform_defaults_flapper.h</a>
+  </div>
+
+  <div class="important">
+    <strong>If you plan to operate your Flapper autonomously, we recommend enabling the tumble detection</strong>. This will cut the throttle automatically when the Flapper tilts by more than 90 degrees from its hover (vertical) orientation.
+    <br><br>
+    To do so, in <a href="https://github.com/bitcraze/crazyflie-firmware/blob/9343aa686600aa5f04beb43549c81bdfda1f9cb8/src/platform/interface/platform_defaults_flapper.h#L149" target="_blank">/src/platform/interface/platform_defaults_flapper.h</a> change:
+    <pre>#define SUPERVISOR_TUMBLE_CHECK_ENABLE true</pre>
+    Further, the tumble detection parameters should be changed in <a href="https://github.com/bitcraze/crazyflie-firmware/blob/9343aa686600aa5f04beb43549c81bdfda1f9cb8/src/modules/src/supervisor.c#L170-L171" target="_blank">/src/modules/src/supervisor.c</a> to:
+    <pre>const float acceptedTiltAccZ = 0.;  // ~90 degrees tilt (when stationary)<br>const uint32_t maxTiltTime = M2T(2000);</pre>
+  </div>
+
+  <h4>C) Firmware update via smartphone app (requires Crazyradio PA dongle)</h4>
+  <div class="info">
+    This functionality is not yet fully supported. The firmware name does not show up correctly and you might upload a wrong firmware, <strong>which can lead to damaged servos</strong>. Before this gets fixed, please use methods A) or B), or experiment at your own risk.
+  </div>
+
+
 
 
